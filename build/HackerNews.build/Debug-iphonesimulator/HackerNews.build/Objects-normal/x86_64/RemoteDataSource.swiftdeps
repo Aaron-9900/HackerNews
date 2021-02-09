@@ -1,0 +1,339 @@
+### Swift dependencies file v0 ###
+provides-top-level:
+- "RemoteDataSource"
+provides-nominal:
+- "10HackerNews16RemoteDataSourceC"
+provides-member:
+- ["10HackerNews16RemoteDataSourceC", ""]
+provides-dynamic-lookup:
+- "getElementById"
+- "getElementsByIdList"
+- "getTop"
+depends-top-level:
+- "+"
+- "=="
+- "AnyPublisher"
+- "ApiConstants"
+- !private "CastingPrecedence"
+- "DataSource"
+- "FloatLiteralType"
+- "HTTPURLResponse"
+- "Int"
+- "IntegerLiteralType"
+- "ItemListError"
+- "JSONDecoder"
+- !private "Publishers"
+- "RemoteDataSource"
+- "Story"
+- "String"
+- !private "StringLiteralType"
+- "URL"
+- "URLSession"
+- !private "print"
+depends-member:
+- !private ["s18AdditiveArithmeticP", ""]
+- !private ["10HackerNews12ApiConstantsV", "GET_ITEM_BY_ID"]
+- !private ["10HackerNews12ApiConstantsV", "GET_TOPSTORIES"]
+- !private ["Sa", "map"]
+- !private ["SK", ""]
+- !private ["SK", "init"]
+- !private ["SK", "map"]
+- !private ["8CloudKit21CKRecordValueProtocolP", "init"]
+- !private ["8CloudKit21CKRecordValueProtocolP", "map"]
+- !private ["s7CVarArgP", "dataTaskPublisher"]
+- !private ["s7CVarArgP", "init"]
+- !private ["s7CVarArgP", "map"]
+- !private ["s7CVarArgP", "shared"]
+- !private ["s7CVarArgP", "statusCode"]
+- !private ["7Combine10PublishersO7CollectV", "eraseToAnyPublisher"]
+- !private ["Sl", ""]
+- !private ["Sl", "init"]
+- !private ["Sl", "map"]
+- !private ["SL", ""]
+- !private ["SL", "init"]
+- !private ["10Foundation15ContiguousBytesP", "map"]
+- !private ["s28CustomDebugStringConvertibleP", ""]
+- !private ["s28CustomDebugStringConvertibleP", "dataTaskPublisher"]
+- !private ["s28CustomDebugStringConvertibleP", "init"]
+- !private ["s28CustomDebugStringConvertibleP", "map"]
+- !private ["s28CustomDebugStringConvertibleP", "shared"]
+- !private ["s28CustomDebugStringConvertibleP", "statusCode"]
+- !private ["s17CustomReflectableP", "init"]
+- !private ["s17CustomReflectableP", "map"]
+- !private ["s23CustomStringConvertibleP", "Element"]
+- !private ["s23CustomStringConvertibleP", ""]
+- !private ["s23CustomStringConvertibleP", "dataTaskPublisher"]
+- !private ["s23CustomStringConvertibleP", "init"]
+- !private ["s23CustomStringConvertibleP", "map"]
+- !private ["s23CustomStringConvertibleP", "shared"]
+- !private ["s23CustomStringConvertibleP", "statusCode"]
+- !private ["10Foundation12DataProtocolP", ""]
+- !private ["10Foundation12DataProtocolP", "map"]
+- !private ["10HackerNews10DataSourceP", "ApiConstants"]
+- !private ["10HackerNews10DataSourceP", "Int"]
+- !private ["10HackerNews10DataSourceP", "ItemListError"]
+- !private ["10HackerNews10DataSourceP", "JSONDecoder"]
+- !private ["10HackerNews10DataSourceP", "Publishers"]
+- !private ["10HackerNews10DataSourceP", "Story"]
+- !private ["10HackerNews10DataSourceP", "String"]
+- !private ["10HackerNews10DataSourceP", "URL"]
+- !private ["10HackerNews10DataSourceP", "URLSession"]
+- ["10HackerNews10DataSourceP", ""]
+- ["10HackerNews10DataSourceP", "getElementById"]
+- ["10HackerNews10DataSourceP", "getElementsByIdList"]
+- ["10HackerNews10DataSourceP", "getTop"]
+- !private ["10HackerNews10DataSourceP", "print"]
+- !private ["So12NSURLSessionC10FoundationE17DataTaskPublisherV", "tryMap"]
+- !private ["Se", "init"]
+- !private ["Se", "map"]
+- !private ["7Combine10PublishersO6DecodeV", "mapError"]
+- !private ["SE", "init"]
+- !private ["SE", "map"]
+- !private ["SQ", ""]
+- !private ["SQ", "collect"]
+- !private ["SQ", "dataTaskPublisher"]
+- !private ["SQ", "eraseToAnyPublisher"]
+- !private ["SQ", "init"]
+- !private ["SQ", "map"]
+- !private ["SQ", "shared"]
+- !private ["SQ", "statusCode"]
+- !private ["s5ErrorP", "map"]
+- !private ["s5ErrorP", "statusCode"]
+- !private ["s25ExpressibleByArrayLiteralP", ""]
+- !private ["s25ExpressibleByArrayLiteralP", "map"]
+- !private ["s43ExpressibleByExtendedGraphemeClusterLiteralP", ""]
+- !private ["s43ExpressibleByExtendedGraphemeClusterLiteralP", "init"]
+- !private ["s27ExpressibleByIntegerLiteralP", ""]
+- !private ["s32ExpressibleByStringInterpolationP", ""]
+- !private ["s32ExpressibleByStringInterpolationP", "init"]
+- !private ["s26ExpressibleByStringLiteralP", ""]
+- !private ["s26ExpressibleByStringLiteralP", "init"]
+- !private ["s33ExpressibleByUnicodeScalarLiteralP", ""]
+- !private ["s33ExpressibleByUnicodeScalarLiteralP", "init"]
+- !private ["So17NSHTTPURLResponseC", "statusCode"]
+- !private ["SH", ""]
+- !private ["SH", "dataTaskPublisher"]
+- !private ["SH", "init"]
+- !private ["SH", "map"]
+- !private ["SH", "shared"]
+- !private ["SH", "statusCode"]
+- ["10HackerNews13ItemListErrorO", ""]
+- !private ["10HackerNews13ItemListErrorO", "map"]
+- !private ["10HackerNews13ItemListErrorO", "statusCode"]
+- !private ["10Foundation11JSONDecoderC", "init"]
+- !private ["s25LosslessStringConvertibleP", "Element"]
+- !private ["s25LosslessStringConvertibleP", ""]
+- !private ["s25LosslessStringConvertibleP", "init"]
+- !private ["7Combine10PublishersO8MapErrorV", "eraseToAnyPublisher"]
+- !private ["7Combine10PublishersO9MergeManyV", "collect"]
+- !private ["7Combine10PublishersO9MergeManyV", "init"]
+- !private ["s10MirrorPathP", "init"]
+- !private ["SM", ""]
+- !private ["SM", "map"]
+- !private ["10Foundation19MutableDataProtocolP", "map"]
+- !private ["So8NSCodingP", ""]
+- !private ["So8NSCodingP", "statusCode"]
+- !private ["So9NSCopyingP", ""]
+- !private ["So9NSCopyingP", "statusCode"]
+- ["So8NSObjectC", ""]
+- !private ["So8NSObjectC", "dataTaskPublisher"]
+- !private ["So8NSObjectC", "shared"]
+- !private ["So8NSObjectC", "statusCode"]
+- !private ["So8NSObjectP", ""]
+- !private ["So8NSObjectP", "dataTaskPublisher"]
+- !private ["So8NSObjectP", "shared"]
+- !private ["So8NSObjectP", "statusCode"]
+- !private ["So14NSSecureCodingP", ""]
+- !private ["So14NSSecureCodingP", "statusCode"]
+- !private ["Sj", ""]
+- !private ["7Combine9PublisherP", "collect"]
+- !private ["7Combine9PublisherP", "decode"]
+- !private ["7Combine9PublisherP", "eraseToAnyPublisher"]
+- !private ["7Combine9PublisherP", "init"]
+- !private ["7Combine9PublisherP", "mapError"]
+- !private ["7Combine9PublisherP", "receive"]
+- !private ["7Combine9PublisherP", "tryMap"]
+- !private ["7Combine10PublishersO", "MergeMany"]
+- !private ["Sk", ""]
+- !private ["Sk", "map"]
+- !private ["Sm", ""]
+- !private ["Sm", "init"]
+- !private ["Sm", "map"]
+- !private ["10Foundation20ReferenceConvertibleP", "init"]
+- ["10HackerNews16RemoteDataSourceC", "AnyPublisher"]
+- !private ["10HackerNews16RemoteDataSourceC", "ApiConstants"]
+- !private ["10HackerNews16RemoteDataSourceC", "HTTPURLResponse"]
+- ["10HackerNews16RemoteDataSourceC", "Int"]
+- ["10HackerNews16RemoteDataSourceC", "ItemListError"]
+- !private ["10HackerNews16RemoteDataSourceC", "JSONDecoder"]
+- !private ["10HackerNews16RemoteDataSourceC", "Publishers"]
+- ["10HackerNews16RemoteDataSourceC", "Story"]
+- ["10HackerNews16RemoteDataSourceC", "String"]
+- !private ["10HackerNews16RemoteDataSourceC", "URL"]
+- !private ["10HackerNews16RemoteDataSourceC", "URLSession"]
+- ["10HackerNews16RemoteDataSourceC", "deinit"]
+- ["10HackerNews16RemoteDataSourceC", "getElementById"]
+- ["10HackerNews16RemoteDataSourceC", "getElementsByIdList"]
+- ["10HackerNews16RemoteDataSourceC", "getTop"]
+- ["10HackerNews16RemoteDataSourceC", "init"]
+- !private ["10HackerNews16RemoteDataSourceC", "print"]
+- !private ["ST", "Element"]
+- !private ["ST", ""]
+- !private ["ST", "init"]
+- !private ["ST", "map"]
+- !private ["10HackerNews5StoryV", ""]
+- !private ["Sx", ""]
+- !private ["SS", "init"]
+- !private ["Sy", "init"]
+- !private ["s16TextOutputStreamP", ""]
+- !private ["s16TextOutputStreamP", "init"]
+- !private ["s20TextOutputStreamableP", ""]
+- !private ["s20TextOutputStreamableP", "init"]
+- !private ["7Combine15TopLevelDecoderP", "decode"]
+- !private ["7Combine15TopLevelDecoderP", "init"]
+- !private ["7Combine10PublishersO6TryMapV", "decode"]
+- !private ["10Foundation3URLV", "init"]
+- ["So13NSURLResponseC", ""]
+- !private ["So13NSURLResponseC", "statusCode"]
+- !private ["So12NSURLSessionC", "dataTaskPublisher"]
+- !private ["So12NSURLSessionC", "shared"]
+- !private ["s14_ArrayProtocolP", "map"]
+- !private ["s30_CustomPlaygroundQuickLookableP", "init"]
+- !private ["s24_DestructorSafeContainerP", "map"]
+- !private ["s51_ExpressibleByBuiltinExtendedGraphemeClusterLiteralP", ""]
+- !private ["s51_ExpressibleByBuiltinExtendedGraphemeClusterLiteralP", "init"]
+- !private ["s35_ExpressibleByBuiltinIntegerLiteralP", "init"]
+- !private ["s34_ExpressibleByBuiltinStringLiteralP", "init"]
+- !private ["s41_ExpressibleByBuiltinUnicodeScalarLiteralP", ""]
+- !private ["s41_ExpressibleByBuiltinUnicodeScalarLiteralP", "init"]
+- !private ["s34_ExpressibleByFileReferenceLiteralP", "init"]
+- !private ["s19_HasContiguousBytesP", "init"]
+- !private ["s19_HasContiguousBytesP", "map"]
+- !private ["s35_HasCustomAnyHashableRepresentationP", "map"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "dataTaskPublisher"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "shared"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "statusCode"]
+- !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "dataTaskPublisher"]
+- !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "shared"]
+- !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "statusCode"]
+- !private ["s21_ObjectiveCBridgeableP", ""]
+- !private ["s21_ObjectiveCBridgeableP", "init"]
+- !private ["s21_ObjectiveCBridgeableP", "map"]
+depends-nominal:
+- !private "s18AdditiveArithmeticP"
+- !private "10HackerNews12ApiConstantsV"
+- !private "Sa"
+- !private "SK"
+- !private "8CloudKit21CKRecordValueProtocolP"
+- !private "s7CVarArgP"
+- !private "7Combine10PublishersO7CollectV"
+- !private "Sl"
+- !private "SL"
+- !private "10Foundation15ContiguousBytesP"
+- !private "s28CustomDebugStringConvertibleP"
+- !private "s17CustomReflectableP"
+- !private "s23CustomStringConvertibleP"
+- !private "10Foundation12DataProtocolP"
+- "10HackerNews10DataSourceP"
+- !private "So12NSURLSessionC10FoundationE17DataTaskPublisherV"
+- !private "Se"
+- !private "7Combine10PublishersO6DecodeV"
+- !private "SE"
+- !private "SQ"
+- !private "s5ErrorP"
+- !private "s25ExpressibleByArrayLiteralP"
+- !private "s43ExpressibleByExtendedGraphemeClusterLiteralP"
+- !private "s27ExpressibleByIntegerLiteralP"
+- !private "s32ExpressibleByStringInterpolationP"
+- !private "s26ExpressibleByStringLiteralP"
+- !private "s33ExpressibleByUnicodeScalarLiteralP"
+- !private "So17NSHTTPURLResponseC"
+- !private "SH"
+- "10HackerNews13ItemListErrorO"
+- !private "10Foundation11JSONDecoderC"
+- !private "s25LosslessStringConvertibleP"
+- !private "7Combine10PublishersO8MapErrorV"
+- !private "7Combine10PublishersO9MergeManyV"
+- !private "s10MirrorPathP"
+- !private "SM"
+- !private "10Foundation19MutableDataProtocolP"
+- !private "So8NSCodingP"
+- !private "So9NSCopyingP"
+- "So8NSObjectC"
+- !private "So8NSObjectP"
+- !private "So14NSSecureCodingP"
+- !private "Sj"
+- !private "7Combine9PublisherP"
+- !private "7Combine10PublishersO"
+- !private "Sk"
+- !private "Sm"
+- !private "10Foundation20ReferenceConvertibleP"
+- "10HackerNews16RemoteDataSourceC"
+- !private "ST"
+- !private "10HackerNews5StoryV"
+- !private "Sx"
+- !private "SS"
+- !private "Sy"
+- !private "s16TextOutputStreamP"
+- !private "s20TextOutputStreamableP"
+- !private "7Combine15TopLevelDecoderP"
+- !private "7Combine10PublishersO6TryMapV"
+- !private "10Foundation3URLV"
+- "So13NSURLResponseC"
+- !private "So12NSURLSessionC"
+- !private "s14_ArrayProtocolP"
+- !private "s30_CustomPlaygroundQuickLookableP"
+- !private "s24_DestructorSafeContainerP"
+- !private "s51_ExpressibleByBuiltinExtendedGraphemeClusterLiteralP"
+- !private "s35_ExpressibleByBuiltinIntegerLiteralP"
+- !private "s34_ExpressibleByBuiltinStringLiteralP"
+- !private "s41_ExpressibleByBuiltinUnicodeScalarLiteralP"
+- !private "s34_ExpressibleByFileReferenceLiteralP"
+- !private "s19_HasContiguousBytesP"
+- !private "s35_HasCustomAnyHashableRepresentationP"
+- !private "10Foundation27_KeyValueCodingAndObservingP"
+- !private "10Foundation37_KeyValueCodingAndObservingPublishingP"
+- !private "s21_ObjectiveCBridgeableP"
+depends-dynamic-lookup:
+depends-external:
+- "/Volumes/Samsung_T5/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/prebuilt-modules/ObjectiveC.swiftmodule/x86_64-apple-ios-simulator.swiftmodule"
+- "/Volumes/Samsung_T5/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/prebuilt-modules/SwiftUI.swiftmodule/x86_64-apple-ios-simulator.swiftmodule"
+- "/Volumes/Samsung_T5/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/prebuilt-modules/CoreData.swiftmodule/x86_64-apple-ios-simulator.swiftmodule"
+- "/Volumes/Samsung_T5/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/prebuilt-modules/CoreImage.swiftmodule/x86_64-apple-ios-simulator.swiftmodule"
+- "/Volumes/Samsung_T5/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/prebuilt-modules/Combine.swiftmodule/x86_64-apple-ios-simulator.swiftmodule"
+- "/Volumes/Samsung_T5/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/prebuilt-modules/QuartzCore.swiftmodule/x86_64-apple-ios-simulator.swiftmodule"
+- "/Volumes/Samsung_T5/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/prebuilt-modules/Dispatch.swiftmodule/x86_64-apple-ios-simulator.swiftmodule"
+- "/Volumes/Samsung_T5/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/prebuilt-modules/Metal.swiftmodule/x86_64-apple-ios-simulator.swiftmodule"
+- "/Volumes/Samsung_T5/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/prebuilt-modules/Darwin.swiftmodule/x86_64-apple-ios-simulator.swiftmodule"
+- "/Volumes/Samsung_T5/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/prebuilt-modules/CoreLocation.swiftmodule/x86_64-apple-ios-simulator.swiftmodule"
+- "/Volumes/Samsung_T5/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/prebuilt-modules/Foundation.swiftmodule/x86_64-apple-ios-simulator.swiftmodule"
+- "/Volumes/Samsung_T5/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/prebuilt-modules/CoreFoundation.swiftmodule/x86_64-apple-ios-simulator.swiftmodule"
+- "/Volumes/Samsung_T5/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/prebuilt-modules/CoreGraphics.swiftmodule/x86_64-apple-ios-simulator.swiftmodule"
+- "/Volumes/Samsung_T5/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/prebuilt-modules/os.swiftmodule/x86_64-apple-ios-simulator.swiftmodule"
+- "/Volumes/Samsung_T5/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/prebuilt-modules/UniformTypeIdentifiers.swiftmodule/x86_64-apple-ios-simulator.swiftmodule"
+- "/Volumes/Samsung_T5/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/prebuilt-modules/Swift.swiftmodule/x86_64-apple-ios-simulator.swiftmodule"
+- "/Volumes/Samsung_T5/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/prebuilt-modules/UIKit.swiftmodule/x86_64-apple-ios-simulator.swiftmodule"
+- "/Volumes/Samsung_T5/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/prebuilt-modules/CloudKit.swiftmodule/x86_64-apple-ios-simulator.swiftmodule"
+- "/Volumes/Samsung_T5/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/prebuilt-modules/SwiftOnoneSupport.swiftmodule/x86_64-apple-ios-simulator.swiftmodule"
+- "/Volumes/Samsung_T5/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/prebuilt-modules/DeveloperToolsSupport.swiftmodule/x86_64-apple-ios-simulator.swiftmodule"
+- "/Volumes/Samsung_T5/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator14.2.sdk/usr/include/mach-o/dyld.modulemap"
+- "/Volumes/Samsung_T5/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator14.2.sdk/usr/include/mach-o/compact_unwind_encoding.modulemap"
+- "/Volumes/Samsung_T5/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator14.2.sdk/usr/include/objc/ObjectiveC.apinotes"
+- "/Volumes/Samsung_T5/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator14.2.sdk/System/Library/Frameworks/OpenGLES.framework/Headers/OpenGLES.apinotes"
+- "/Volumes/Samsung_T5/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator14.2.sdk/System/Library/Frameworks/CoreData.framework/Headers/CoreData.apinotes"
+- "/Volumes/Samsung_T5/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator14.2.sdk/System/Library/Frameworks/CoreImage.framework/Headers/CoreImage.apinotes"
+- "/Volumes/Samsung_T5/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator14.2.sdk/System/Library/Frameworks/QuartzCore.framework/Headers/QuartzCore.apinotes"
+- "/Volumes/Samsung_T5/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/apinotes/Dispatch.apinotes"
+- "/Volumes/Samsung_T5/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator14.2.sdk/System/Library/Frameworks/Metal.framework/Headers/Metal.apinotes"
+- "/Volumes/Samsung_T5/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator14.2.sdk/usr/include/Darwin.apinotes"
+- "/Volumes/Samsung_T5/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator14.2.sdk/System/Library/Frameworks/CoreLocation.framework/Headers/CoreLocation.apinotes"
+- "/Volumes/Samsung_T5/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator14.2.sdk/System/Library/Frameworks/Foundation.framework/Headers/Foundation.apinotes"
+- "/Volumes/Samsung_T5/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator14.2.sdk/System/Library/Frameworks/CoreGraphics.framework/Headers/CoreGraphics.apinotes"
+- "/Volumes/Samsung_T5/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator14.2.sdk/System/Library/Frameworks/UserNotifications.framework/Headers/UserNotifications.apinotes"
+- "/Volumes/Samsung_T5/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/apinotes/os.apinotes"
+- "/Volumes/Samsung_T5/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator14.2.sdk/System/Library/Frameworks/UniformTypeIdentifiers.framework/Headers/UniformTypeIdentifiers.apinotes"
+- "/Volumes/Samsung_T5/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator14.2.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIKit.apinotes"
+- "/Volumes/Samsung_T5/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator14.2.sdk/System/Library/Frameworks/CloudKit.framework/Headers/CloudKit.apinotes"
+- "/Volumes/Samsung_T5/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator14.2.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
+- "/Volumes/Samsung_T5/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator14.2.sdk/System/Library/Frameworks/Security.framework/Headers/Security.apinotes"
+interface-hash: "cd13c89aade036a84bcefdcc0df1d4ff"

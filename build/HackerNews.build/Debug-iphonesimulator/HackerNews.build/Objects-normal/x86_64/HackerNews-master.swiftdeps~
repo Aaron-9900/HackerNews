@@ -1,0 +1,15 @@
+version: "Apple Swift version 5.3.1 (swiftlang-1200.0.41 clang-1200.0.32.8)"
+options: "6522a70feb838f3ce510c59320c8f8fe"
+build_time: [1612902802, 769140000]
+inputs:
+  "/Volumes/Samsung_T5/Test/HackerNews/HackerNews/View/TopStories/TopStoryRow.swift": [1612897454, 0]
+  "/Volumes/Samsung_T5/Test/HackerNews/HackerNews/View/TopStories/TopStoriesView.swift": [1612898366, 0]
+  "/Volumes/Samsung_T5/Test/HackerNews/HackerNews/Model/RemoteDataSource.swift": [1612902629, 0]
+  "/Volumes/Samsung_T5/Test/HackerNews/HackerNews/HackerNewsApp.swift": [1612891763, 0]
+  "/Volumes/Samsung_T5/Test/HackerNews/HackerNews/Model/DataSource.swift": [1612902183, 0]
+  "/Volumes/Samsung_T5/Test/HackerNews/HackerNews/Model/ApiConstants.swift": [1612894964, 0]
+  "/Volumes/Samsung_T5/Test/HackerNews/HackerNews/Extension/AtList.swift": [1612898728, 0]
+  "/Volumes/Samsung_T5/Test/HackerNews/HackerNews/Model/Entities/Story.swift": [1612896765, 0]
+  "/Volumes/Samsung_T5/Test/HackerNews/HackerNews/ViewModel/ViewModel.swift": [1612892269, 0]
+  "/Volumes/Samsung_T5/Test/HackerNews/HackerNews/View/TopStories/TopStoriesViewModel.swift": [1612902800, 0]
+  "/Volumes/Samsung_T5/Test/HackerNews/HackerNews/Model/Errors/ItemListError.swift": [1612892182, 0]
