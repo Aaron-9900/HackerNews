@@ -12,19 +12,27 @@ provides-member:
 - ["10HackerNews15TopStoriesInputO", ""]
 - ["10HackerNews14TopStoriesViewV", ""]
 - ["10HackerNews14TopStoriesViewV", "loadMore"]
+- ["10HackerNews14TopStoriesViewV", "setSpinner"]
 provides-dynamic-lookup:
 depends-top-level:
 - "=="
+- "AnyView"
 - "AnyViewModel"
+- "Array"
 - "AssignmentPrecedence"
+- !private "CircularProgressViewStyle"
 - "DataSource"
-- !private "FloatLiteralType"
+- "EdgeInsets"
+- "FloatLiteralType"
 - "ForEach"
 - "Int"
 - !private "IntegerLiteralType"
-- !private "List"
+- "LazyVStack"
+- "LoadingStatus"
 - "ObservedObject"
+- !private "ProgressView"
 - !private "RemoteDataSource"
+- !private "ScrollView"
 - "Story"
 - !private "StringLiteralType"
 - "Text"
@@ -35,37 +43,75 @@ depends-top-level:
 - "TopStoryRow"
 - "View"
 - "loadMore"
+- "setSpinner"
 - "viewModel"
 depends-member:
 - ["7SwiftUI10AnimatableP", ""]
+- !private ["7SwiftUI10AnimatableP", "init"]
+- !private ["7SwiftUI7AnyViewV", "init"]
 - ["10HackerNews12AnyViewModelC", ""]
 - !private ["10HackerNews12AnyViewModelC", "init"]
 - !private ["10HackerNews12AnyViewModelC", "items"]
+- !private ["10HackerNews12AnyViewModelC", "status"]
 - !private ["10HackerNews12AnyViewModelC", "subscript"]
 - !private ["10HackerNews12AnyViewModelC", "trigger"]
+- !private ["Sa", "enumerated"]
+- !private ["Sa", "init"]
 - ["SK", ""]
+- !private ["SK", "enumerated"]
+- !private ["SK", "init"]
+- !private ["8CloudKit21CKRecordValueProtocolP", "enumerated"]
+- !private ["8CloudKit21CKRecordValueProtocolP", "init"]
+- !private ["s7CVarArgP", "enumerated"]
+- !private ["s7CVarArgP", "init"]
+- !private ["7SwiftUI25CircularProgressViewStyleV", "init"]
 - ["Sl", ""]
+- !private ["Sl", "enumerated"]
+- !private ["Sl", "init"]
 - ["SL", ""]
+- !private ["10Foundation15ContiguousBytesP", "enumerated"]
+- !private ["10Foundation15ContiguousBytesP", "init"]
+- !private ["s28CustomDebugStringConvertibleP", "enumerated"]
+- !private ["s28CustomDebugStringConvertibleP", "init"]
 - !private ["s28CustomDebugStringConvertibleP", "title"]
+- !private ["s17CustomReflectableP", "enumerated"]
+- !private ["s17CustomReflectableP", "init"]
 - !private ["s17CustomReflectableP", "title"]
 - ["s23CustomStringConvertibleP", ""]
+- !private ["s23CustomStringConvertibleP", "enumerated"]
+- !private ["s23CustomStringConvertibleP", "init"]
+- !private ["10Foundation12DataProtocolP", ""]
+- !private ["10Foundation12DataProtocolP", "enumerated"]
+- !private ["10Foundation12DataProtocolP", "init"]
 - !private ["10HackerNews10DataSourceP", "init"]
+- !private ["Se", "enumerated"]
 - !private ["Se", "id"]
+- !private ["Se", "init"]
 - !private ["Se", "title"]
 - ["7SwiftUI15DynamicPropertyP", "init"]
 - !private ["7SwiftUI18DynamicViewContentP", "init"]
+- !private ["7SwiftUI10EdgeInsetsV", "init"]
+- !private ["SE", "enumerated"]
+- !private ["SE", "init"]
 - !private ["SE", "title"]
 - ["SQ", "=="]
 - ["SQ", ""]
 - ["SQ", "_rawHashValue"]
 - !private ["SQ", "endReached"]
+- !private ["SQ", "enumerated"]
 - !private ["SQ", "font"]
 - ["SQ", "hash"]
 - ["SQ", "hashValue"]
 - !private ["SQ", "init"]
-- !private ["SQ", "onAppear"]
+- !private ["SQ", "listRowInsets"]
+- ["SQ", "loading"]
 - !private ["SQ", "title"]
+- !private ["s25ExpressibleByArrayLiteralP", ""]
+- !private ["s25ExpressibleByArrayLiteralP", "enumerated"]
+- !private ["s25ExpressibleByArrayLiteralP", "init"]
 - ["s43ExpressibleByExtendedGraphemeClusterLiteralP", ""]
+- !private ["s27ExpressibleByIntegerLiteralP", "IntegerLiteralType"]
+- !private ["s27ExpressibleByIntegerLiteralP", "init"]
 - !private ["s23ExpressibleByNilLiteralP", "title"]
 - ["s32ExpressibleByStringInterpolationP", ""]
 - !private ["s26ExpressibleByStringLiteralP", "StringLiteralType"]
@@ -79,18 +125,28 @@ depends-member:
 - ["SH", ""]
 - ["SH", "_rawHashValue"]
 - !private ["SH", "endReached"]
+- !private ["SH", "enumerated"]
 - ["SH", "hash"]
 - ["SH", "hashValue"]
+- !private ["SH", "init"]
+- ["SH", "loading"]
 - !private ["SH", "title"]
 - !private ["s6HasherV", "combine"]
 - !private ["s12IdentifiableP", "id"]
 - !private ["s12IdentifiableP", "init"]
 - !private ["s12IdentifiableP", "items"]
+- !private ["s12IdentifiableP", "status"]
 - !private ["s12IdentifiableP", "subscript"]
 - !private ["s12IdentifiableP", "trigger"]
 - ["10HackerNews13ItemListErrorO", ""]
-- !private ["7SwiftUI4ListV", "init"]
+- !private ["7SwiftUI10LazyVStackV", "init"]
+- ["10HackerNews13LoadingStatusO", "loading"]
 - ["s25LosslessStringConvertibleP", ""]
+- !private ["SM", ""]
+- !private ["SM", "enumerated"]
+- !private ["SM", "init"]
+- !private ["10Foundation19MutableDataProtocolP", "enumerated"]
+- !private ["10Foundation19MutableDataProtocolP", "init"]
 - ["So8NSCodingP", ""]
 - ["So8NSObjectP", ""]
 - !private ["7Combine16ObservableObjectP", "Input"]
@@ -99,6 +155,7 @@ depends-member:
 - ["7Combine16ObservableObjectP", ""]
 - !private ["7Combine16ObservableObjectP", "init"]
 - !private ["7Combine16ObservableObjectP", "items"]
+- !private ["7Combine16ObservableObjectP", "status"]
 - !private ["7Combine16ObservableObjectP", "subscript"]
 - !private ["7Combine16ObservableObjectP", "trigger"]
 - ["7SwiftUI14ObservedObjectV", "init"]
@@ -106,19 +163,31 @@ depends-member:
 - ["7SwiftUI14ObservedObjectV", "subscript"]
 - ["7SwiftUI14ObservedObjectV", "wrappedValue"]
 - !private ["Sq", "title"]
+- !private ["7SwiftUI12ProgressViewV", "init"]
+- !private ["7SwiftUI12ProgressViewV", "progressViewStyle"]
+- !private ["7SwiftUI17ProgressViewStyleP", "init"]
 - !private ["7Combine9PublishedV", "init"]
 - !private ["7Combine9PublishedV", "projectedValue"]
 - !private ["7Combine9PublishedV", "subscript"]
 - !private ["7Combine9PublishedV", "wrappedValue"]
 - !private ["7Combine9PublisherP", "Output"]
+- !private ["Sk", ""]
+- !private ["Sk", "enumerated"]
+- !private ["Sk", "init"]
+- !private ["Sm", ""]
+- !private ["Sm", "enumerated"]
+- !private ["Sm", "init"]
 - !private ["10HackerNews16RemoteDataSourceC", ""]
 - !private ["10HackerNews16RemoteDataSourceC", "init"]
+- !private ["7SwiftUI10ScrollViewV", "init"]
 - ["ST", ""]
+- !private ["ST", "enumerated"]
+- !private ["ST", "init"]
 - !private ["10HackerNews5StoryV", ""]
 - !private ["10HackerNews5StoryV", "id"]
 - !private ["7SwiftUI4TextV", "font"]
 - !private ["7SwiftUI4TextV", "init"]
-- !private ["7SwiftUI4TextV", "onAppear"]
+- !private ["7SwiftUI4TextV", "listRowInsets"]
 - ["s16TextOutputStreamP", ""]
 - ["s20TextOutputStreamableP", ""]
 - ["10HackerNews15TopStoriesInputO", "=="]
@@ -130,21 +199,29 @@ depends-member:
 - ["10HackerNews15TopStoriesInputO", "hashValue"]
 - ["10HackerNews15TopStoriesStateV", "DataSource"]
 - ["10HackerNews15TopStoriesStateV", "Int"]
+- ["10HackerNews15TopStoriesStateV", "LoadingStatus"]
 - ["10HackerNews15TopStoriesStateV", "Story"]
 - ["10HackerNews15TopStoriesStateV", "end"]
 - ["10HackerNews15TopStoriesStateV", "init"]
 - ["10HackerNews15TopStoriesStateV", "items"]
 - ["10HackerNews15TopStoriesStateV", "service"]
 - ["10HackerNews15TopStoriesStateV", "start"]
+- ["10HackerNews15TopStoriesStateV", "status"]
 - ["10HackerNews15TopStoriesStateV", "topIds"]
 - ["10HackerNews14TopStoriesViewV", "$viewModel"]
+- ["10HackerNews14TopStoriesViewV", "AnyView"]
 - ["10HackerNews14TopStoriesViewV", "AnyViewModel"]
+- !private ["10HackerNews14TopStoriesViewV", "Array"]
 - ["10HackerNews14TopStoriesViewV", "Body"]
+- !private ["10HackerNews14TopStoriesViewV", "CircularProgressViewStyle"]
 - ["10HackerNews14TopStoriesViewV", "Default_Body"]
+- !private ["10HackerNews14TopStoriesViewV", "EdgeInsets"]
 - !private ["10HackerNews14TopStoriesViewV", "ForEach"]
-- !private ["10HackerNews14TopStoriesViewV", "List"]
+- !private ["10HackerNews14TopStoriesViewV", "LazyVStack"]
 - ["10HackerNews14TopStoriesViewV", "ObservedObject"]
+- !private ["10HackerNews14TopStoriesViewV", "ProgressView"]
 - !private ["10HackerNews14TopStoriesViewV", "RemoteDataSource"]
+- !private ["10HackerNews14TopStoriesViewV", "ScrollView"]
 - !private ["10HackerNews14TopStoriesViewV", "Text"]
 - ["10HackerNews14TopStoriesViewV", "TopStoriesInput"]
 - ["10HackerNews14TopStoriesViewV", "TopStoriesState"]
@@ -160,19 +237,26 @@ depends-member:
 - ["10HackerNews14TopStoriesViewV", "body"]
 - ["10HackerNews14TopStoriesViewV", "init"]
 - ["10HackerNews14TopStoriesViewV", "loadMore"]
+- ["10HackerNews14TopStoriesViewV", "setSpinner"]
 - ["10HackerNews14TopStoriesViewV", "viewModel"]
 - !private ["10HackerNews19TopStoriesViewModelC", ""]
 - !private ["10HackerNews19TopStoriesViewModelC", "init"]
 - !private ["10HackerNews11TopStoryRowV", ""]
 - !private ["10HackerNews11TopStoryRowV", "init"]
 - ["So18UIFocusEnvironmentP", ""]
+- !private ["7SwiftUI4ViewP", "AnyView"]
 - !private ["7SwiftUI4ViewP", "AnyViewModel"]
+- !private ["7SwiftUI4ViewP", "Array"]
 - ["7SwiftUI4ViewP", "Body"]
+- !private ["7SwiftUI4ViewP", "CircularProgressViewStyle"]
 - ["7SwiftUI4ViewP", "Default_Body"]
+- !private ["7SwiftUI4ViewP", "EdgeInsets"]
 - !private ["7SwiftUI4ViewP", "ForEach"]
-- !private ["7SwiftUI4ViewP", "List"]
+- !private ["7SwiftUI4ViewP", "LazyVStack"]
 - ["7SwiftUI4ViewP", "ObservedObject"]
+- !private ["7SwiftUI4ViewP", "ProgressView"]
 - !private ["7SwiftUI4ViewP", "RemoteDataSource"]
+- !private ["7SwiftUI4ViewP", "ScrollView"]
 - !private ["7SwiftUI4ViewP", "Text"]
 - !private ["7SwiftUI4ViewP", "TopStoriesViewModel"]
 - !private ["7SwiftUI4ViewP", "TopStoryRow"]
@@ -184,8 +268,11 @@ depends-member:
 - ["7SwiftUI4ViewP", "body"]
 - !private ["7SwiftUI4ViewP", "font"]
 - !private ["7SwiftUI4ViewP", "init"]
+- !private ["7SwiftUI4ViewP", "listRowInsets"]
 - !private ["7SwiftUI4ViewP", "loadMore"]
 - !private ["7SwiftUI4ViewP", "onAppear"]
+- !private ["7SwiftUI4ViewP", "progressViewStyle"]
+- !private ["7SwiftUI4ViewP", "setSpinner"]
 - !private ["7SwiftUI4ViewP", "title"]
 - !private ["7SwiftUI4ViewP", "viewModel"]
 - !private ["7SwiftUI11ViewBuilderV", "buildBlock"]
@@ -199,29 +286,51 @@ depends-member:
 - !private ["10HackerNews9ViewModelP", "State"]
 - !private ["10HackerNews9ViewModelP", "init"]
 - !private ["10HackerNews9ViewModelP", "items"]
+- !private ["10HackerNews9ViewModelP", "status"]
 - !private ["10HackerNews9ViewModelP", "subscript"]
 - !private ["10HackerNews9ViewModelP", "trigger"]
+- !private ["s14_ArrayProtocolP", "enumerated"]
+- !private ["s14_ArrayProtocolP", "init"]
+- !private ["s24_DestructorSafeContainerP", "enumerated"]
+- !private ["s24_DestructorSafeContainerP", "init"]
 - ["s51_ExpressibleByBuiltinExtendedGraphemeClusterLiteralP", ""]
 - !private ["s35_ExpressibleByBuiltinIntegerLiteralP", "init"]
 - !private ["s34_ExpressibleByBuiltinStringLiteralP", "init"]
 - ["s41_ExpressibleByBuiltinUnicodeScalarLiteralP", ""]
+- !private ["s19_HasContiguousBytesP", "enumerated"]
+- !private ["s19_HasContiguousBytesP", "init"]
+- !private ["s35_HasCustomAnyHashableRepresentationP", "enumerated"]
+- !private ["s35_HasCustomAnyHashableRepresentationP", "init"]
+- !private ["s21_ObjectiveCBridgeableP", "enumerated"]
+- !private ["s21_ObjectiveCBridgeableP", "init"]
 - !private ["s21_ObjectiveCBridgeableP", "title"]
+- !private ["7SwiftUI11_VectorMathP", "init"]
 depends-nominal:
 - "7SwiftUI10AnimatableP"
+- !private "7SwiftUI7AnyViewV"
 - "10HackerNews12AnyViewModelC"
+- !private "Sa"
 - "SK"
+- !private "8CloudKit21CKRecordValueProtocolP"
+- !private "s7CVarArgP"
+- !private "7SwiftUI25CircularProgressViewStyleV"
 - "Sl"
 - "SL"
+- !private "10Foundation15ContiguousBytesP"
 - !private "s28CustomDebugStringConvertibleP"
 - !private "s17CustomReflectableP"
 - "s23CustomStringConvertibleP"
+- !private "10Foundation12DataProtocolP"
 - !private "10HackerNews10DataSourceP"
 - !private "Se"
 - "7SwiftUI15DynamicPropertyP"
 - !private "7SwiftUI18DynamicViewContentP"
+- !private "7SwiftUI10EdgeInsetsV"
 - !private "SE"
 - "SQ"
+- !private "s25ExpressibleByArrayLiteralP"
 - "s43ExpressibleByExtendedGraphemeClusterLiteralP"
+- !private "s27ExpressibleByIntegerLiteralP"
 - !private "s23ExpressibleByNilLiteralP"
 - "s32ExpressibleByStringInterpolationP"
 - "s26ExpressibleByStringLiteralP"
@@ -233,16 +342,24 @@ depends-nominal:
 - !private "s6HasherV"
 - !private "s12IdentifiableP"
 - "10HackerNews13ItemListErrorO"
-- !private "7SwiftUI4ListV"
+- !private "7SwiftUI10LazyVStackV"
+- "10HackerNews13LoadingStatusO"
 - "s25LosslessStringConvertibleP"
+- !private "SM"
+- !private "10Foundation19MutableDataProtocolP"
 - "So8NSCodingP"
 - "So8NSObjectP"
 - "7Combine16ObservableObjectP"
 - "7SwiftUI14ObservedObjectV"
 - !private "Sq"
+- !private "7SwiftUI12ProgressViewV"
+- !private "7SwiftUI17ProgressViewStyleP"
 - !private "7Combine9PublishedV"
 - !private "7Combine9PublisherP"
+- !private "Sk"
+- !private "Sm"
 - !private "10HackerNews16RemoteDataSourceC"
+- !private "7SwiftUI10ScrollViewV"
 - "ST"
 - !private "10HackerNews5StoryV"
 - !private "7SwiftUI4TextV"
@@ -257,11 +374,16 @@ depends-nominal:
 - "7SwiftUI4ViewP"
 - !private "7SwiftUI11ViewBuilderV"
 - !private "10HackerNews9ViewModelP"
+- !private "s14_ArrayProtocolP"
+- !private "s24_DestructorSafeContainerP"
 - "s51_ExpressibleByBuiltinExtendedGraphemeClusterLiteralP"
 - !private "s35_ExpressibleByBuiltinIntegerLiteralP"
 - !private "s34_ExpressibleByBuiltinStringLiteralP"
 - "s41_ExpressibleByBuiltinUnicodeScalarLiteralP"
+- !private "s19_HasContiguousBytesP"
+- !private "s35_HasCustomAnyHashableRepresentationP"
 - !private "s21_ObjectiveCBridgeableP"
+- !private "7SwiftUI11_VectorMathP"
 depends-dynamic-lookup:
 depends-external:
 - "/Volumes/Samsung_T5/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/prebuilt-modules/ObjectiveC.swiftmodule/x86_64-apple-ios-simulator.swiftmodule"
@@ -304,4 +426,4 @@ depends-external:
 - "/Volumes/Samsung_T5/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator14.2.sdk/System/Library/Frameworks/CloudKit.framework/Headers/CloudKit.apinotes"
 - "/Volumes/Samsung_T5/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator14.2.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
 - "/Volumes/Samsung_T5/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator14.2.sdk/System/Library/Frameworks/Security.framework/Headers/Security.apinotes"
-interface-hash: "c9c1634acb6a975de8c2c18990907ab3"
+interface-hash: "4bcae298bdf2c8909d77dbc277610e55"

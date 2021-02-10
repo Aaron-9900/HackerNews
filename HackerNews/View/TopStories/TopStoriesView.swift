@@ -13,6 +13,7 @@ struct TopStoriesState {
     var end: Int
     var items: [Story]
     var service: DataSource
+    var status: LoadingStatus
 }
 enum TopStoriesInput {
     case endReached
@@ -26,14 +27,19 @@ struct TopStoriesView: View {
     var body: some View {
         Text("Top stories")
             .font(/*@START_MENU_TOKEN@*/.title/*@END_MENU_TOKEN@*/)
-        List {
-            ForEach(viewModel.items, id: \.self.id) {
-                TopStoryRow(story: $0)
+        ScrollView {
+            LazyVStack {
+                ForEach(Array(viewModel.items.enumerated()), id: \.1.id) { (index, item) in
+
+                    TopStoryRow(story: item, index: index)
+                }
+                Text("")
+                    .listRowInsets(EdgeInsets(top: -20, leading: -20, bottom: -20, trailing: -20))
+                    .onAppear(perform: {
+                        loadMore()
+                    })
+                setSpinner()
             }
-            Text("")
-                .onAppear(perform: {
-                    loadMore()
-                })
         }
     }
 }
@@ -41,5 +47,15 @@ struct TopStoriesView: View {
 extension TopStoriesView {
     func loadMore() {
         viewModel.trigger(.endReached)
+    }
+    func setSpinner() -> AnyView {
+        switch viewModel.status {
+        case .loading:
+            return AnyView(ProgressView()
+                .progressViewStyle(CircularProgressViewStyle()))
+        default:
+            return AnyView(Text(""))
+        
+        }
     }
 }

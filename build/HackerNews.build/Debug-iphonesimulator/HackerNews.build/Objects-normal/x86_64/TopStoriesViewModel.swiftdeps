@@ -128,9 +128,12 @@ depends-member:
 - !private ["SQ", "at"]
 - !private ["SQ", "count"]
 - ["SQ", "endReached"]
+- !private ["SQ", "error"]
 - !private ["SQ", "failure"]
 - !private ["SQ", "finished"]
+- !private ["SQ", "idle"]
 - !private ["SQ", "init"]
+- !private ["SQ", "loading"]
 - !private ["SQ", "main"]
 - !private ["SQ", "store"]
 - !private ["SQ", "subscript"]
@@ -145,13 +148,19 @@ depends-member:
 - !private ["SH", "at"]
 - !private ["SH", "count"]
 - ["SH", "endReached"]
+- !private ["SH", "error"]
 - !private ["SH", "failure"]
 - !private ["SH", "finished"]
+- !private ["SH", "idle"]
 - !private ["SH", "init"]
+- !private ["SH", "loading"]
 - !private ["SH", "main"]
 - !private ["SH", "store"]
 - !private ["SH", "subscript"]
 - ["10HackerNews13ItemListErrorO", ""]
+- !private ["10HackerNews13LoadingStatusO", "error"]
+- !private ["10HackerNews13LoadingStatusO", "idle"]
+- !private ["10HackerNews13LoadingStatusO", "loading"]
 - !private ["SM", ""]
 - !private ["SM", "append"]
 - !private ["SM", "at"]
@@ -247,6 +256,7 @@ depends-member:
 - !private ["10HackerNews15TopStoriesStateV", "items"]
 - !private ["10HackerNews15TopStoriesStateV", "service"]
 - !private ["10HackerNews15TopStoriesStateV", "start"]
+- !private ["10HackerNews15TopStoriesStateV", "status"]
 - !private ["10HackerNews15TopStoriesStateV", "topIds"]
 - ["10HackerNews19TopStoriesViewModelC", "$state"]
 - ["10HackerNews19TopStoriesViewModelC", "AnyCancellable"]
@@ -355,6 +365,7 @@ depends-nominal:
 - !private "s23ExpressibleByNilLiteralP"
 - "SH"
 - "10HackerNews13ItemListErrorO"
+- !private "10HackerNews13LoadingStatusO"
 - !private "SM"
 - !private "10Foundation19MutableDataProtocolP"
 - !private "So8NSCodingP"

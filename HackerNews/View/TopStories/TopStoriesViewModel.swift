@@ -13,7 +13,7 @@ class TopStoriesViewModel: ViewModel {
     @Published var state: TopStoriesState
     
     init(service: DataSource) {
-        state = TopStoriesState(topIds: [], start:0, end: 10, items: [], service: service)
+        state = TopStoriesState(topIds: [], start:0, end: 10, items: [], service: service, status: .loading)
         getTopIds()
     }
     func getElementsToIndex() {
@@ -23,6 +23,7 @@ class TopStoriesViewModel: ViewModel {
         guard state.start < state.end else {
             return
         }
+        self.state.status = .loading
         state.service.getElementsByIdList(ids: Array(state.topIds[state.start...state.end]))
             .receive(on: DispatchQueue.main)
             .sink(receiveCompletion: { completion in
@@ -30,10 +31,11 @@ class TopStoriesViewModel: ViewModel {
                 case .finished: break
                 case .failure(let error) :
                     print("Error:", error)
+                    self.state.status = .error
                 }
                 
             }, receiveValue: { [unowned self] response in
-                print(response)
+                self.state.status = .idle
                 self.state.items.append(contentsOf: response)
             })
             .store(in: &subscriptions)
@@ -46,11 +48,12 @@ class TopStoriesViewModel: ViewModel {
                 case .finished: break
                 case .failure(let error) :
                     print("Error:", error)
+                    self.state.status = .error
                 }
                 
             }, receiveValue: { [unowned self] response in
-                print(response)
                 self.state.topIds = Array(response[0...100])
+                self.state.status = .idle
                 getElementsToIndex()
             })
             .store(in: &subscriptions)

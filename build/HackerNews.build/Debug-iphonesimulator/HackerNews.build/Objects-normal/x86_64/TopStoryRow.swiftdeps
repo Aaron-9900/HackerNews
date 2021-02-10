@@ -7,98 +7,188 @@ provides-member:
 - ["10HackerNews11TopStoryRowV", ""]
 provides-dynamic-lookup:
 depends-top-level:
+- "=="
 - "AssignmentPrecedence"
+- "BooleanLiteralType"
+- "Divider"
 - !private "FloatLiteralType"
+- "Int"
 - !private "IntegerLiteralType"
+- "Link"
 - "Spacer"
+- "State"
 - "Story"
+- "String"
+- !private "StringLiteralType"
 - "Text"
 - "TopStoryRow"
+- "URL"
+- !private "UnicodeScalarType"
 - !private "VStack"
 - "View"
+- "getUrl"
+- "index"
 depends-member:
+- !private ["7SwiftUI9AlignmentV", "center"]
 - ["7SwiftUI10AnimatableP", ""]
 - ["SK", ""]
+- !private ["s12CaseIterableP", "center"]
 - ["Sl", ""]
+- !private ["7SwiftUI5ColorV", "black"]
 - ["SL", ""]
+- !private ["s28CustomDebugStringConvertibleP", ""]
+- !private ["s28CustomDebugStringConvertibleP", "black"]
 - !private ["s28CustomDebugStringConvertibleP", "caption"]
+- !private ["s28CustomDebugStringConvertibleP", "init"]
+- !private ["s28CustomDebugStringConvertibleP", "none"]
+- !private ["s28CustomDebugStringConvertibleP", "some"]
 - !private ["s28CustomDebugStringConvertibleP", "title2"]
+- !private ["s17CustomReflectableP", "black"]
 - !private ["s17CustomReflectableP", "caption"]
+- !private ["s17CustomReflectableP", "none"]
+- !private ["s17CustomReflectableP", "some"]
 - !private ["s17CustomReflectableP", "title2"]
 - ["s23CustomStringConvertibleP", ""]
+- !private ["s23CustomStringConvertibleP", "black"]
+- !private ["s23CustomStringConvertibleP", "init"]
+- !private ["Se", "black"]
 - !private ["Se", "caption"]
+- !private ["Se", "init"]
+- !private ["Se", "none"]
+- !private ["Se", "some"]
 - !private ["Se", "title"]
 - !private ["Se", "title2"]
 - !private ["Se", "url"]
+- !private ["7SwiftUI7DividerV", "init"]
+- ["7SwiftUI15DynamicPropertyP", "init"]
+- ["7SwiftUI15DynamicPropertyP", "wrappedValue"]
+- !private ["SE", "black"]
 - !private ["SE", "caption"]
+- !private ["SE", "init"]
+- !private ["SE", "none"]
+- !private ["SE", "some"]
 - !private ["SE", "title2"]
 - ["SQ", ""]
+- !private ["SQ", "black"]
 - !private ["SQ", "caption"]
+- !private ["SQ", "center"]
 - !private ["SQ", "font"]
 - !private ["SQ", "init"]
+- !private ["SQ", "none"]
 - !private ["SQ", "padding"]
+- !private ["SQ", "some"]
 - !private ["SQ", "title2"]
 - ["s43ExpressibleByExtendedGraphemeClusterLiteralP", ""]
 - !private ["s27ExpressibleByIntegerLiteralP", "IntegerLiteralType"]
 - !private ["s27ExpressibleByIntegerLiteralP", "init"]
+- !private ["s23ExpressibleByNilLiteralP", "black"]
 - !private ["s23ExpressibleByNilLiteralP", "caption"]
+- !private ["s23ExpressibleByNilLiteralP", "none"]
+- !private ["s23ExpressibleByNilLiteralP", "some"]
 - !private ["s23ExpressibleByNilLiteralP", "title2"]
 - ["s32ExpressibleByStringInterpolationP", ""]
 - ["s26ExpressibleByStringLiteralP", ""]
 - ["s33ExpressibleByUnicodeScalarLiteralP", ""]
 - !private ["7SwiftUI4FontV", "caption"]
 - !private ["7SwiftUI4FontV", "title2"]
+- !private ["7SwiftUI7GestureP", "black"]
 - !private ["7SwiftUI7GestureP", "caption"]
+- !private ["7SwiftUI7GestureP", "none"]
+- !private ["7SwiftUI7GestureP", "some"]
 - !private ["7SwiftUI7GestureP", "title2"]
 - ["SH", ""]
+- !private ["SH", "black"]
 - !private ["SH", "caption"]
+- !private ["SH", "center"]
+- !private ["SH", "init"]
+- !private ["SH", "none"]
+- !private ["SH", "some"]
 - !private ["SH", "title2"]
 - !private ["s12IdentifiableP", "title"]
 - !private ["s12IdentifiableP", "url"]
+- !private ["7SwiftUI4LinkV", "foregroundColor"]
+- !private ["7SwiftUI4LinkV", "init"]
 - ["s25LosslessStringConvertibleP", ""]
 - ["So8NSCodingP", ""]
+- ["So8NSObjectP", ""]
+- !private ["Sq", "black"]
 - !private ["Sq", "caption"]
+- !private ["Sq", "none"]
+- !private ["Sq", "some"]
 - !private ["Sq", "title2"]
+- !private ["10Foundation20ReferenceConvertibleP", "init"]
 - ["ST", ""]
+- !private ["7SwiftUI10ShapeStyleP", "black"]
 - !private ["7SwiftUI6SpacerV", "init"]
+- ["7SwiftUI5StateV", "init"]
+- ["7SwiftUI5StateV", "projectedValue"]
+- ["7SwiftUI5StateV", "subscript"]
+- ["7SwiftUI5StateV", "wrappedValue"]
 - !private ["10HackerNews5StoryV", "title"]
 - !private ["10HackerNews5StoryV", "url"]
 - !private ["7SwiftUI4TextV", "font"]
 - !private ["7SwiftUI4TextV", "init"]
 - !private ["7SwiftUI4TextV", "padding"]
+- !private ["7SwiftUI13TextAlignmentO", "center"]
 - ["s16TextOutputStreamP", ""]
 - ["s20TextOutputStreamableP", ""]
+- !private ["10HackerNews11TopStoryRowV", "$pressed"]
 - ["10HackerNews11TopStoryRowV", "Body"]
 - ["10HackerNews11TopStoryRowV", "Default_Body"]
+- !private ["10HackerNews11TopStoryRowV", "Divider"]
+- ["10HackerNews11TopStoryRowV", "Int"]
+- !private ["10HackerNews11TopStoryRowV", "Link"]
 - !private ["10HackerNews11TopStoryRowV", "Spacer"]
+- ["10HackerNews11TopStoryRowV", "State"]
 - ["10HackerNews11TopStoryRowV", "Story"]
+- ["10HackerNews11TopStoryRowV", "String"]
 - !private ["10HackerNews11TopStoryRowV", "Text"]
+- ["10HackerNews11TopStoryRowV", "URL"]
 - !private ["10HackerNews11TopStoryRowV", "VStack"]
 - ["10HackerNews11TopStoryRowV", "View"]
 - ["10HackerNews11TopStoryRowV", ""]
 - ["10HackerNews11TopStoryRowV", "_Default_Body"]
 - ["10HackerNews11TopStoryRowV", "_makeView"]
 - ["10HackerNews11TopStoryRowV", "_makeViewList"]
+- !private ["10HackerNews11TopStoryRowV", "_pressed"]
 - ["10HackerNews11TopStoryRowV", "_viewListCount"]
 - ["10HackerNews11TopStoryRowV", "body"]
+- !private ["10HackerNews11TopStoryRowV", "getUrl"]
+- ["10HackerNews11TopStoryRowV", "index"]
 - ["10HackerNews11TopStoryRowV", "init"]
+- !private ["10HackerNews11TopStoryRowV", "pressed"]
 - ["10HackerNews11TopStoryRowV", "story"]
+- ["So18UIFocusEnvironmentP", ""]
+- !private ["10Foundation3URLV", "init"]
 - !private ["7SwiftUI6VStackV", "init"]
+- !private ["7SwiftUI6VStackV", "padding"]
 - ["7SwiftUI4ViewP", "Body"]
 - ["7SwiftUI4ViewP", "Default_Body"]
+- !private ["7SwiftUI4ViewP", "Divider"]
+- !private ["7SwiftUI4ViewP", "Link"]
 - !private ["7SwiftUI4ViewP", "Spacer"]
+- ["7SwiftUI4ViewP", "State"]
 - !private ["7SwiftUI4ViewP", "Text"]
+- !private ["7SwiftUI4ViewP", "URL"]
 - !private ["7SwiftUI4ViewP", "VStack"]
 - ["7SwiftUI4ViewP", ""]
 - ["7SwiftUI4ViewP", "_Default_Body"]
 - ["7SwiftUI4ViewP", "_makeView"]
 - ["7SwiftUI4ViewP", "_makeViewList"]
 - ["7SwiftUI4ViewP", "_viewListCount"]
+- !private ["7SwiftUI4ViewP", "black"]
 - ["7SwiftUI4ViewP", "body"]
 - !private ["7SwiftUI4ViewP", "caption"]
 - !private ["7SwiftUI4ViewP", "font"]
+- !private ["7SwiftUI4ViewP", "foregroundColor"]
+- !private ["7SwiftUI4ViewP", "frame"]
+- !private ["7SwiftUI4ViewP", "getUrl"]
+- !private ["7SwiftUI4ViewP", "index"]
 - !private ["7SwiftUI4ViewP", "init"]
+- !private ["7SwiftUI4ViewP", "multilineTextAlignment"]
+- !private ["7SwiftUI4ViewP", "none"]
 - !private ["7SwiftUI4ViewP", "padding"]
+- !private ["7SwiftUI4ViewP", "some"]
 - !private ["7SwiftUI4ViewP", "story"]
 - !private ["7SwiftUI4ViewP", "title2"]
 - !private ["7SwiftUI11ViewBuilderV", "buildBlock"]
@@ -106,20 +196,34 @@ depends-member:
 - !private ["7SwiftUI11ViewBuilderV", "buildFinalResult"]
 - !private ["7SwiftUI11ViewBuilderV", "buildIf"]
 - !private ["7SwiftUI11ViewBuilderV", "buildOptional"]
+- !private ["s30_CustomPlaygroundQuickLookableP", "init"]
+- ["s35_ExpressibleByBuiltinBooleanLiteralP", "init"]
 - ["s51_ExpressibleByBuiltinExtendedGraphemeClusterLiteralP", ""]
 - !private ["s35_ExpressibleByBuiltinIntegerLiteralP", "init"]
+- !private ["s34_ExpressibleByBuiltinStringLiteralP", "init"]
 - ["s41_ExpressibleByBuiltinUnicodeScalarLiteralP", ""]
+- !private ["s34_ExpressibleByFileReferenceLiteralP", "init"]
+- !private ["s21_ObjectiveCBridgeableP", ""]
+- !private ["s21_ObjectiveCBridgeableP", "black"]
 - !private ["s21_ObjectiveCBridgeableP", "caption"]
+- !private ["s21_ObjectiveCBridgeableP", "init"]
+- !private ["s21_ObjectiveCBridgeableP", "none"]
+- !private ["s21_ObjectiveCBridgeableP", "some"]
 - !private ["s21_ObjectiveCBridgeableP", "title2"]
 depends-nominal:
+- !private "7SwiftUI9AlignmentV"
 - "7SwiftUI10AnimatableP"
 - "SK"
+- !private "s12CaseIterableP"
 - "Sl"
+- !private "7SwiftUI5ColorV"
 - "SL"
 - !private "s28CustomDebugStringConvertibleP"
 - !private "s17CustomReflectableP"
 - "s23CustomStringConvertibleP"
 - !private "Se"
+- !private "7SwiftUI7DividerV"
+- "7SwiftUI15DynamicPropertyP"
 - !private "SE"
 - "SQ"
 - "s43ExpressibleByExtendedGraphemeClusterLiteralP"
@@ -132,22 +236,34 @@ depends-nominal:
 - !private "7SwiftUI7GestureP"
 - "SH"
 - !private "s12IdentifiableP"
+- !private "7SwiftUI4LinkV"
 - "s25LosslessStringConvertibleP"
 - "So8NSCodingP"
+- "So8NSObjectP"
 - !private "Sq"
+- !private "10Foundation20ReferenceConvertibleP"
 - "ST"
+- !private "7SwiftUI10ShapeStyleP"
 - !private "7SwiftUI6SpacerV"
+- "7SwiftUI5StateV"
 - !private "10HackerNews5StoryV"
 - !private "7SwiftUI4TextV"
+- !private "7SwiftUI13TextAlignmentO"
 - "s16TextOutputStreamP"
 - "s20TextOutputStreamableP"
 - "10HackerNews11TopStoryRowV"
+- "So18UIFocusEnvironmentP"
+- !private "10Foundation3URLV"
 - !private "7SwiftUI6VStackV"
 - "7SwiftUI4ViewP"
 - !private "7SwiftUI11ViewBuilderV"
+- !private "s30_CustomPlaygroundQuickLookableP"
+- "s35_ExpressibleByBuiltinBooleanLiteralP"
 - "s51_ExpressibleByBuiltinExtendedGraphemeClusterLiteralP"
 - !private "s35_ExpressibleByBuiltinIntegerLiteralP"
+- !private "s34_ExpressibleByBuiltinStringLiteralP"
 - "s41_ExpressibleByBuiltinUnicodeScalarLiteralP"
+- !private "s34_ExpressibleByFileReferenceLiteralP"
 - !private "s21_ObjectiveCBridgeableP"
 depends-dynamic-lookup:
 depends-external:
@@ -191,4 +307,4 @@ depends-external:
 - "/Volumes/Samsung_T5/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator14.2.sdk/System/Library/Frameworks/CloudKit.framework/Headers/CloudKit.apinotes"
 - "/Volumes/Samsung_T5/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator14.2.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
 - "/Volumes/Samsung_T5/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator14.2.sdk/System/Library/Frameworks/Security.framework/Headers/Security.apinotes"
-interface-hash: "952b58217d427af628faa76c76430187"
+interface-hash: "5499bea0ea295f3955d35423526193eb"
