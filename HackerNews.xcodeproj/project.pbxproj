@@ -23,6 +23,9 @@
 		34DAED8825D303C000F4DC83 /* TopStoriesViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34DAED8725D303C000F4DC83 /* TopStoriesViewModel.swift */; };
 		34DAED9825D3131A00F4DC83 /* TopStoryRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34DAED9725D3131A00F4DC83 /* TopStoryRow.swift */; };
 		34DAEDA625D3192300F4DC83 /* AtList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34DAEDA525D3192300F4DC83 /* AtList.swift */; };
+		34F21E1E25ED951C002CBD7D /* StoryDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34F21E1D25ED951C002CBD7D /* StoryDetailView.swift */; };
+		34F21E3625ED9D6C002CBD7D /* View+GetUrl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34F21E3525ED9D6C002CBD7D /* View+GetUrl.swift */; };
+		34F21E3C25ED9DD8002CBD7D /* UnnamedLink.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34F21E3B25ED9DD8002CBD7D /* UnnamedLink.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -65,6 +68,9 @@
 		34DAED8725D303C000F4DC83 /* TopStoriesViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopStoriesViewModel.swift; sourceTree = "<group>"; };
 		34DAED9725D3131A00F4DC83 /* TopStoryRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopStoryRow.swift; sourceTree = "<group>"; };
 		34DAEDA525D3192300F4DC83 /* AtList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AtList.swift; sourceTree = "<group>"; };
+		34F21E1D25ED951C002CBD7D /* StoryDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoryDetailView.swift; sourceTree = "<group>"; };
+		34F21E3525ED9D6C002CBD7D /* View+GetUrl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "View+GetUrl.swift"; sourceTree = "<group>"; };
+		34F21E3B25ED9DD8002CBD7D /* UnnamedLink.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UnnamedLink.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -156,6 +162,8 @@
 		344C7CD625D2FD8700176019 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				34F21E3A25ED9DCB002CBD7D /* Components */,
+				34F21E1C25ED9506002CBD7D /* StoryDetail */,
 				34DAED8625D303A700F4DC83 /* TopStories */,
 			);
 			path = View;
@@ -212,8 +220,25 @@
 			isa = PBXGroup;
 			children = (
 				34DAEDA525D3192300F4DC83 /* AtList.swift */,
+				34F21E3525ED9D6C002CBD7D /* View+GetUrl.swift */,
 			);
 			path = Extension;
+			sourceTree = "<group>";
+		};
+		34F21E1C25ED9506002CBD7D /* StoryDetail */ = {
+			isa = PBXGroup;
+			children = (
+				34F21E1D25ED951C002CBD7D /* StoryDetailView.swift */,
+			);
+			path = StoryDetail;
+			sourceTree = "<group>";
+		};
+		34F21E3A25ED9DCB002CBD7D /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				34F21E3B25ED9DD8002CBD7D /* UnnamedLink.swift */,
+			);
+			path = Components;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -346,15 +371,18 @@
 			buildActionMask = 2147483647;
 			files = (
 				34D35F6C25D445BD009CB6D2 /* LoadingStatus.swift in Sources */,
+				34F21E3C25ED9DD8002CBD7D /* UnnamedLink.swift in Sources */,
 				34DAED9825D3131A00F4DC83 /* TopStoryRow.swift in Sources */,
 				344C7CAB25D2FD6900176019 /* TopStoriesView.swift in Sources */,
 				34DAED7D25D3000D00F4DC83 /* RemoteDataSource.swift in Sources */,
 				344C7CA925D2FD6900176019 /* HackerNewsApp.swift in Sources */,
+				34F21E3625ED9D6C002CBD7D /* View+GetUrl.swift in Sources */,
 				344C7CE625D2FEA500176019 /* DataSource.swift in Sources */,
 				34DAED8225D3005C00F4DC83 /* ApiConstants.swift in Sources */,
 				34DAEDA625D3192300F4DC83 /* AtList.swift in Sources */,
 				344C7CDE25D2FE3800176019 /* Story.swift in Sources */,
 				34DAED7825D2FFD000F4DC83 /* ViewModel.swift in Sources */,
+				34F21E1E25ED951C002CBD7D /* StoryDetailView.swift in Sources */,
 				34DAED8825D303C000F4DC83 /* TopStoriesViewModel.swift in Sources */,
 				34DAED7325D2FF3000F4DC83 /* ItemListError.swift in Sources */,
 			);

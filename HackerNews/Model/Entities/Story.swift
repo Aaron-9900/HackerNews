@@ -12,6 +12,7 @@ struct Story : Identifiable {
     let by: String
     let title: String
     let url: String
+    let kids: [Int]?
 }
 
 extension Story : Decodable {
@@ -20,6 +21,7 @@ extension Story : Decodable {
         case id
         case by
         case title
+        case kids
     }
     init(from decoder: Decoder) throws {
         let values = try decoder.container(keyedBy: CodingKeys.self)
@@ -28,9 +30,9 @@ extension Story : Decodable {
         } catch {
             self.url = ""
         }
-        self.id = try values.decode(Int.self, forKey: .id)
         self.by = try values.decode(String.self, forKey: .by)
+        self.kids = try values.decodeIfPresent([Int].self, forKey: .kids)
+        self.id = try values.decode(Int.self, forKey: .id)
         self.title = try values.decode(String.self, forKey: .title)
-        
     }
 }

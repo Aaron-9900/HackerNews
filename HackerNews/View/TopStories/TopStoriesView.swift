@@ -25,22 +25,22 @@ struct TopStoriesView: View {
         viewModel = AnyViewModel(TopStoriesViewModel(service: RemoteDataSource()))
     }
     var body: some View {
-        Text("Top stories")
-            .font(/*@START_MENU_TOKEN@*/.title/*@END_MENU_TOKEN@*/)
-        ScrollView {
-            LazyVStack {
-                ForEach(Array(viewModel.items.enumerated()), id: \.1.id) { (index, item) in
-
-                    TopStoryRow(story: item, index: index)
+        NavigationView {
+            ScrollView {
+                LazyVStack {
+                    ForEach(Array(viewModel.items.enumerated()), id: \.1.id) { (index, item) in
+                        TopStoryRow(story: item, index: index)
+                    }
+                    Text("")
+                        .listRowInsets(EdgeInsets(top: -20, leading: -20, bottom: -20, trailing: -20))
+                        .onAppear(perform: {
+                            loadMore()
+                        })
+                    setSpinner()
                 }
-                Text("")
-                    .listRowInsets(EdgeInsets(top: -20, leading: -20, bottom: -20, trailing: -20))
-                    .onAppear(perform: {
-                        loadMore()
-                    })
-                setSpinner()
-            }
+            }.navigationTitle("Top Stories")
         }
+       
     }
 }
 
