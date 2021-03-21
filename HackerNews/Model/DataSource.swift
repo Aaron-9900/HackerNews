@@ -12,4 +12,5 @@ protocol DataSource {
     func getTop() -> AnyPublisher<[Int], ItemListError>
     func getElementById(id: String) -> AnyPublisher<Story, ItemListError>
     func getElementsByIdList(ids: [Int]) -> AnyPublisher<[Story], ItemListError>
+    func getComments(ids: [Int]) -> AnyPublisher<[Comment], ItemListError>
 }

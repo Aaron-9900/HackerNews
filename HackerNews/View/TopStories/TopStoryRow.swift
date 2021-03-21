@@ -26,16 +26,16 @@ struct TopStoryRow: View {
                     .foregroundColor(.black)
                     .layoutPriority(2)
             }
-            
-            Spacer()
             if !self.story.url.isEmpty {
+                Spacer()
                 UnnamedLink(url: self.story.url)
                     .multilineTextAlignment(.center)
+                    .foregroundColor(.orange)
             }
            
         }
         .padding()
-        .frame(height: 100, alignment: .center)
+        .frame(alignment: .center)
         Divider()
         
     }

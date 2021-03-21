@@ -27,21 +27,18 @@ struct TopStoriesView: View {
     var body: some View {
         NavigationView {
             ScrollView {
-                LazyVStack {
-                    ForEach(Array(viewModel.items.enumerated()), id: \.1.id) { (index, item) in
-                        TopStoryRow(story: item, index: index)
-                    }
-                    Text("")
-                        .listRowInsets(EdgeInsets(top: -20, leading: -20, bottom: -20, trailing: -20))
-                        .onAppear(perform: {
-                            loadMore()
-                        })
-                    setSpinner()
-                }
-            }.navigationTitle("Top Stories")
+                VirtualList(items: viewModel.items, view: {(item, index) in
+                    TopStoryRow(story: item, index: index)
+                }, callback: {
+                    loadMore()
+                }, spinner: setSpinner)
+            }
+            .navigationTitle("Top Stories")
         }
-       
+        .accentColor(.orange)
+            
     }
+    
 }
 
 extension TopStoriesView {

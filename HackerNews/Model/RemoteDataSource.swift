@@ -27,7 +27,6 @@ class RemoteDataSource : DataSource {
     }
     func getElementById(id: String) -> AnyPublisher<Story, ItemListError> {
         let item = String(id) + ".json"
-        print(ApiConstants.GET_ITEM_BY_ID + item)
         return URLSession.shared.dataTaskPublisher(for: URL(string: ApiConstants.GET_ITEM_BY_ID + item)!)
             .tryMap { response in
                 guard
